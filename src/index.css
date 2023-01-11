@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myNewNNBtn:hover{
+  font-size: 15px;
+  transition: 0.5s;
+  background-color : pink !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menuIcon{
+  cursor: pointer;
+}
+
+.playIcon{
+  display: none !important;
+}
+
+.checkHover{
+  opacity: 0;
+  background-color: red;
+  transition: opacity 1s ease-in-out;
+}
+
+.main_class:hover .checkHover{
+  opacity: 0.8;
+}
+
+.main_class:hover .playIcon{
+  display: block !important;
+  transition: 2s ease-in-out !important;
+  transform: translateX(10%) !important;
 }
