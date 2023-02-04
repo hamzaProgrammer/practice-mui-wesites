@@ -1,20 +1,20 @@
 import React from 'react';
-import HeroSection from "../components/HeroSection"
-import Swiper from "../components/HomeSwipper"
-import FeaturedProducts from '../components/FeaturedProducts';
-import { Box } from '@mui/material';
-import Testimonial from '../components/Testimonal';
-
+import HeroSection from '../components/HeroSection'
+import Waves from "../components/WavesSection"
+import TopRestaurants from "../components/TopRestaurants"
+import TopMenus from "../components/FamouseMenus"
+import PopularThisMonth from "../components/PopularThisMonth"
+import ChooseFoodComp from "../components/FoodForYouThisMonth"
 
 const Home = () => {
   return (
     <>
-      <Box className="max-w-[1240px] mx-auto" >
-        <HeroSection  />
-        <Swiper />
-        <FeaturedProducts/>
-        <Testimonial/>
-      </Box>
+      <HeroSection />
+      <Waves />
+      <TopRestaurants />
+      <TopMenus />
+      <PopularThisMonth />
+      <ChooseFoodComp />
     </>
   );
 }

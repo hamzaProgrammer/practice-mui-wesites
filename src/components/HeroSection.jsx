@@ -1,42 +1,34 @@
 import React from 'react';
-import {Box} from "@mui/material"
-import Typography from "../utils/Typography"
+import {Stack } from "@mui/material"
+import {Typography , InputField , Button } from "../utils"
+import HeroSectionComp from "./HeroSectionComp"
 
 const HeroSection = () => {
     return (
         <>
-            <Box className="flex lg:flex-row flex-col justify-between align-middle md:px-6 md:pt-4 " >
-            {/* Left side section */}
-                <Box className="flex md:flex-row flex-col justify-between align-middle md:min-w-[65%]" >
-                    {/* inner left section */}
-                    <Box className="flex md:flex-col flex-row md:px-0 px-4 justify-between align-middle">
-                        <Box className="flex flex-col justify-between align-middle">
-                            <Typography children="Skin" sx={{color : "#1e272e", fontSize : { xs : "15px", sm : "25px", md : "20px" , lg : "25px"} , fontWeight : 550}}  />
-                            <Typography children="Protection" sx={{color : "#1e272e", fontSize : { xs : "15px", sm : "25px", md : "20px" , lg : "25px"} , fontWeight : 550}}  />
-                            <Typography children="Cream" sx={{color : "#1e272e", fontSize : { xs : "15px",sm : "25px", md : "20px" , lg : "25px"} ,  fontWeight : 550}}  />
-                        </Box>
-                        <Box className="flex flex-col justify-between align-middle  " sx={{ marginTop : {xs: "15px" , md : "20px" , lg : "70px" , xl : "120px"}}} >
-                            <Typography children="Trendy" sx={{color : "#2d3436", fontSize : { xs : "15px",sm : "25px", md : "28px" , lg : "35px"} , fontWeight : 600}}  />
-                            <Typography children="Collection" sx={{color : "#2d3436", fontSize : { xs : "15px",sm : "25px", md : "28px" , lg : "35px"} ,  fontWeight : 600}}  />
-                        </Box>
-                    </Box>
-                    {/* image section */}
-                    <Box  className="flex justify-between align-middle max-w-[500px] md:max-h-[400px] max-h-[250px]">
-                        <img alt="middle imag" className="max-w-[100%] max-h-[100%] rounded-lg bg-[#74b9ff]" src="https://amazon-3l2.pages.dev/static/media/hero.7e2be00982208588722d.png" />
-                    </Box>
-                </Box>
-            {/* Right side section */}
-                <Box className="flex lg:flex-col flex-row lg:flex-end justify-evenly lg:mt-0 mt-4 lg:align-end align-center">
-                    <Box className="flex flex-col justify-between align-middle">
-                        <Typography children="1.5m" sx={{color : "#1e272e", fontSize : { xs : "15px",sm : "28px", md : "20px" , lg : "25px"} , fontWeight : 700}}  />
-                        <Typography children="Monthly Traffic" sx={{color : "#1e272e", fontSize : { xs : "15px",sm : "25px", md : "20px" , lg : "25px"}  , fontWeight : 550}}  />
-                    </Box>
-                    <Box className="flex flex-col justify-between align-middle" sx={{ marginTop : {xs: "15px" , md : "200px" , lg : "250px" ,} }} >
-                        <Typography children="100k" sx={{color : "#2d3436", fontWeight : 600 , fontSize : { xs : "15px",sm : "25px", md : "25px" , lg : "35px"} }}  />
-                        <Typography children="Happy Customers"  sx={{color : "#2d3436", fontSize : { xs : "15px",sm : "25px", md : "25px" , lg : "35px"} , fontWeight : 600}}  />
-                    </Box>
-                </Box>
-            </Box>
+            <Stack direction="column" justifyContent="center" alignItems="center" className="bg-[url('https://raw.githubusercontent.com/sunil9813/Food-Order/master/images/home.jpg')] bg-no-repeat bg-cover bg-center mt-[70px] min-h-screen pt-2 lg:pb-3 pb-[100px] " >
+                <Stack direction={{sm: "column" , md: "row"}} justifyContent="center" alignItems="center" spacing={{sm : 1, md: 1 , lg: 3 , xl : 4}} >
+                    <Typography children="Order" className="font-extrabold lg:text-5xl xl:text-6xl md:text-5xl text-4xl text-[white]"  />
+                    <Typography children="Food Online From" className="font-bold font-[sofia] italic lg:text-5xl xl:text-6xl md:text-5xl text-4xl text-[white]"  />
+                    <Typography children="the" className="font-extrabold  lg:text-5xl xl:text-6xl md:text-5xl text-4xl text-[white]"  />
+                </Stack>
+                <Typography children="Best Restaurants" className="font-extrabold lg:text-5xl xl:text-6xl md:text-5xl sm:text-4xl text-3xl text-[white]"  />
+                <Stack direction={{sm: "column" , md: "row"}} justifyContent="center" alignItems="center" spacing={{xs : 2, sm : 2, md: 1 , lg: 3 , xl : 4}} className="sm:max-w-[950px] max-w-[310px] lg:min-w-[950px] mt-10 mx-auto rounded-md  bg-[yellow] px-3 py-4" >
+                    <InputField placeholder="Restaurant Name..." variant="filled" fullWidth={{sm : true , md : true , lg : false}} focused={true} className="bg-[white] text-[#2d3436] md:w-[auto] md:min-w-[350px] min-w-[300px] " />
+                    <InputField placeholder="Search Location ..." variant="filled" fullWidth={{sm : true , md : true , lg : false}} focused={true} className="bg-[white] text-[#2d3436] md:w-[auto] md:min-w-[350px] min-w-[300px] " />
+                    <Button children="Search Now" className="bg-[crimson] text-[white] font-bold md:h-[55px] h-[40px] min-w-[150px] hover:bg-[#d63031] " />
+                </Stack>
+                <Stack direction={{ xs: "column" , sm: "row" , md: "row"}} justifyContent="center" alignItems="center" spacing={{xs : 2, sm : 2, md: 5 , lg: 10 , xl : 10}} className="sm:max-w-[950px] max-w-[320px] lg:min-w-[950px] mt-10 mx-auto rounded-md px-3 py-4" >
+                    <Stack direction="row" justifyContent="space-around" className="min-w-[50%]" >
+                        <HeroSectionComp count="137" text="Restaurants" />
+                        <HeroSectionComp count="158" text="People Served" />
+                    </Stack>
+                    <Stack direction="row" justifyContent="space-around" className="md:ml-[20px] min-w-[50%]  " >
+                        <HeroSectionComp count="639k" text="happy Service" />
+                        <HeroSectionComp count="256" text="Regular Users" />
+                    </Stack>
+                </Stack>
+            </Stack>
         </>
     );
 }

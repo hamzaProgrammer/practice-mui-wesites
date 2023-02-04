@@ -23,7 +23,8 @@ const MyInput = ({
         placeholder,
         focused,
         color,
-        id
+        id,
+        className
     }) => {
         return (
         <>
@@ -54,6 +55,7 @@ const MyInput = ({
                 placeholder={placeholder && placeholder}
                 focused={focused && focused }
                 color={color && color}
+                className={className &&className}
             />
         </>
     );
