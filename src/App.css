@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,300;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
 
 *{
   margin : 0;
@@ -7,6 +9,10 @@
   border : 0;
   outline: 0;
   font-family: 'Poppins', sans-serif;;
+}
+
+body{
+  font-family: 'Poppins', sans-serif
 }
 
 .App {
@@ -110,4 +116,17 @@
 .restaurant_image_new:hover{
   border-radius: none;
   min-width: 200px;
+}
+
+.sponser_image{
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.getStarted{
+  border: 4px solid #2d3436;
+}
+
+.getStartedBtn{
+  border: 4px solid red;
 }

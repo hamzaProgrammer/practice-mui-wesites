@@ -29,7 +29,7 @@ const Footer = () => {
   }
     return (
       <>
-        <Box className="flex flex-col md:h-[300px] h-[350px] bg-[#020917] pt-12  " >
+        <Box className="flex flex-col md:h-[300px] h-[350px] bg-[#05000D] pt-12" >
             <Box className="flex md:flex-row flex-col justify-between items-center mx-auto max-w-[600px]" >
                 <Box className="flex justify-between items-center " >
                   <Button children="Home" variant="text" sx={buttonStyle} />

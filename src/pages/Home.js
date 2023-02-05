@@ -1,20 +1,20 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection'
-import Waves from "../components/WavesSection"
-import TopRestaurants from "../components/TopRestaurants"
-import TopMenus from "../components/FamouseMenus"
-import PopularThisMonth from "../components/PopularThisMonth"
-import ChooseFoodComp from "../components/FoodForYouThisMonth"
+import HeroSection from "../components/HeroSecton"
+import Sponsers from "../components/SponserCompanies"
+import BestChoices from "../components/BestChoices"
+import OurValues from "../components/OurValues"
+import ContactUs from "../components/ContactUs"
+import GetStarted from "../components/GetStarted"
 
 const Home = () => {
   return (
     <>
-      <HeroSection />
-      <Waves />
-      <TopRestaurants />
-      <TopMenus />
-      <PopularThisMonth />
-      <ChooseFoodComp />
+      <HeroSection/>
+      <Sponsers />
+      <BestChoices/>
+      <OurValues />
+      <ContactUs />
+      <GetStarted />
     </>
   );
 }

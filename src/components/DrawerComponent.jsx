@@ -1,18 +1,20 @@
 import React from 'react';
 import {Stack} from "@mui/material"
-import {Button} from "../utils"
-import {DrawerIconStyle , DrawerStyle} from "./styles"
+import {Button ,Typography} from "../utils"
+import {DrawerIconStyle , DrawerStyle , iconTextStyle , iconStyle , ButtonStyle} from "./styles"
 
 const DrawerComponent = () => {
     return (
         <>
-            <Stack direction="column" justifyContent="center" alignItems="center" sx={DrawerStyle} >
-                <img  alt="logo" loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyW3Cceis7i3Ms5jxHGbj0G1ACWhnDVlsHg&usqp=CAU" className="max-w-[50px] max-h-[50px] rounded-lg" style={DrawerIconStyle} />
-                <Button children="Collections" sx={{color: "#2d3436" , boxShadow: 0, fontSize : "14px" , marginRight : "20px" , fontWeight : "bold" , marginBottom : "15px"}}  />
-                <Button children="Brands" sx={{color: "#2d3436" , boxShadow: 0, fontSize : "14px" , marginRight : "20px" , fontWeight : "bold" , marginBottom : "15px"}}  />
-                <Button children="New" sx={{color: "#2d3436" , boxShadow: 0, fontSize : "14px" , marginRight : "20px" , fontWeight : "bold" , marginBottom : "15px"}}  />
-                <Button children="Sales" sx={{color: "#2d3436" , boxShadow: 0, fontSize : "14px" , marginRight : "20px" , fontWeight : "bold" , marginBottom : "15px"}}  />
-                <Button children="English" sx={{color: "#2d3436" , boxShadow: 0, fontSize : "14px" , marginRight : "20px" , fontWeight : "bold" ,}}  />
+            <Stack sx={DrawerStyle}  >
+                <Stack sx={DrawerIconStyle}  >
+                    <Typography children="Halux" className="text-[white] text-2xl font-semibold font-[Kalam]" sx={iconTextStyle}  />
+                    <img style={iconStyle} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANhJREFUSEvtldENwjAMRF83gAkYAdgANmAURmAkNgA2gA1gAtgA5CqR3Mi010r5a/7aOPcc5yw3VF5NZX3GABbAJSW0Bz5Kciogi2+S6B2QIArAiz8SYA1IkCFAKb5LgCsgQfoAkXiuu+1JkH+APvH8thIkAijiMqQEjBGXIB5QWnGpeh2ws+/Iwh5gtjNn5DXksLLPvu6HaW3tuxbgBrSWjrLMmUy9QefcDPAPHZZ2LtGkEj2BlTKtghibF3kotdvRGxyAU9HVCu8FHIGzDx7bTAqoE1Md8APjLkQZBPCBYQAAAABJRU5ErkJggg==" alt="logo-imag"  />
+                </Stack>
+                <Button children="Home" sx={ButtonStyle} />
+                <Button children="Residences" sx={ButtonStyle} />
+                <Button children="Value" sx={ButtonStyle} />
+                <Button children="Contact" sx={ButtonStyle} />
             </Stack>
         </>
     );

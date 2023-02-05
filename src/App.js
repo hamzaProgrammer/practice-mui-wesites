@@ -1,15 +1,18 @@
 import './App.css';
+import {createContext , useState} from "react"
 import Routes from './routes/Routes'
 //import Theme from "./theme/ThemseSettings"
 //import { ThemeProvider } from "@mui/material/styles";
+export const ThemeContext = createContext(null)
 
 
 function App() {
+  const [ theme , setTheme ] = useState(true);
   return (
     <>
-        {/* <ThemeProvider theme={Theme} > */}
+        <ThemeContext.Provider value={[theme , setTheme]} >
             <Routes />
-        {/* </ThemeProvider> */}
+        </ThemeContext.Provider>
     </>
   );
 }

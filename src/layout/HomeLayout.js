@@ -12,10 +12,6 @@ const HomeLayout = () => {
   return (
     <>
         <Box>
-            {/* <Helmet>
-                <title>Home</title>
-            </Helmet> */}
-            <Header />
             <ContentArea >
                 <Suspense fallback={<div />}>
                     <Switch>

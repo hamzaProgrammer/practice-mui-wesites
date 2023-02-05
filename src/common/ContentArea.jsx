@@ -1,14 +1,15 @@
-import React from 'react';
+import React , {useContext } from 'react';
 import {Box} from "@mui/material"
+import {ThemeContext} from "../App"
 
 const ContentArea = ({children}) => {
+  const [ theme , setTheme ] = useContext(ThemeContext)
+
   return (
     <>
-        {/* <Box className="bg-[#f9ca24]  min-h-[100%]" > */}
-        {/* <Box className="bg-[#020917]  min-h-[100%]" > */}
-        <Box className="min-h-[100vh] in-w-[100%] bg-[white] -mt-[75px] " >
-            {children}
-        </Box>
+          <Box className={`min-h-[100vh] ${theme ? "bg-[#05000D]" : "bg-[white]"} `} >
+              {children}
+          </Box>
     </>
   );
 }
