@@ -18,23 +18,24 @@ export const DrawerStyle = {
 }
 
 export const iconTextStyle = {
-    fontSize : "20px",
+    fontSize : "25px",
     marginRight : "5px",
-    marginTop : "5px",
+    marginTop : "12px",
     fontFamily : "Kalam",
     color : "white",
     fontWeight : 600
 }
 
 export const iconStyle = {
-    maxWidth : "30px",
+    maxWidth : "70px",
     color : "white",
-    maxHeight : "30px"
+    maxHeight : "70px"
 }
 
 export const ButtonStyle = {
     color : "white",
     fontWeight : 600,
+    fontFamily : "Pacifico",
     borderBottom: "1px solid #3B4E5D",
     borderRadius : "0px",
     marginBottom: "10px",

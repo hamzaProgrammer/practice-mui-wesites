@@ -1,20 +1,18 @@
 import React from 'react';
-import HeroSection from "../components/HeroSecton"
-import Sponsers from "../components/SponserCompanies"
-import BestChoices from "../components/BestChoices"
-import OurValues from "../components/OurValues"
-import ContactUs from "../components/ContactUs"
-import GetStarted from "../components/GetStarted"
+import HeroSection from "../components/HeroSection"
+import TopCategories from "../components/CoffeTypes"
+import History from "../components/OurHistory"
+import StepsOfManufacturing from "../components/StepsOfMaking"
+import AboutCoffee from "../components/AboutCoffee"
 
 const Home = () => {
   return (
     <>
-      <HeroSection/>
-      <Sponsers />
-      <BestChoices/>
-      <OurValues />
-      <ContactUs />
-      <GetStarted />
+      <HeroSection />
+      <TopCategories />
+      <History />
+      <StepsOfManufacturing />
+      <AboutCoffee />
     </>
   );
 }

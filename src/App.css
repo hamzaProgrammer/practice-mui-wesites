@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,300;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *{
   margin : 0;
@@ -129,4 +129,58 @@ body{
 
 .getStartedBtn{
   border: 4px solid red;
+}
+
+.heroSec{
+  border-bottom: 1px dashed white;
+  min-height : 4px;
+  min-width : 100%;
+}
+
+.heroBtn{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.coffeeTypes{
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.step{
+  border: 4px solid #6E260E;
+}
+
+.leftCurve{
+  transform: rotate(120deg);
+}
+
+.rightCurve{
+  transform: rotate(50deg);
+}
+
+.coffeeSteps{
+  background-image: url("./assets/images/coffe2.png");
+  background-repeat : no-repeat;
+  object-fit : cover;
+  opacity: 0.9;
+}
+
+@media screen and (min-width : 2560px) {
+  .stepsClass{
+    max-width : 800px;
+    background-color: yellow;
+  }
+
+  .leftCurve{
+    min-Height : 250px
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  .leftCurve{
+    transform: rotate(160deg);
+  }
+  .rightCurve{
+    transform: rotate(20deg);
+  }
 }

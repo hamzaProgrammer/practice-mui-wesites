@@ -10,8 +10,8 @@ const MyButton = ({
         onClickFunc,
         color,
         size,
-        startIcon,
-        endIcon,
+        StartIcon,
+        EndIcon,
         loading,
         loadingPosition,
         fullWidth,
@@ -32,10 +32,10 @@ const MyButton = ({
             //color={color & color}
             size={size && size}
             disableRipple={disableRipple && disableRipple}
-            startIcon={startIcon && startIcon}
-            endIcon={endIcon && endIcon}
+            startIcon={StartIcon && StartIcon}
+            endIcon={EndIcon && EndIcon}
             loading ={loading && loading}
-            loadingPosition={loadingPosition & loadingPosition}
+            loadingPosition={loadingPosition && loadingPosition}
             fullWidth={fullWidth  && fullWidth	}
             sx={sx && sx}
             className={className}
