@@ -1,53 +1,53 @@
 import React from 'react';
-import {Stack , Box } from "@mui/material"
-import {Typography , Button } from "../utils"
-import Header from "../common/Header"
-import HeroSectionImage from "../assets/images/home-coffee.png"
-import HeroSectionSmallImage from "../assets/images/coffe3.png"
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import HomeIcon from '@mui/icons-material/Home';
-import SchoolIcon from '@mui/icons-material/School';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import StorefrontIcon from '@mui/icons-material/Storefront';
+import {Box , Stack} from "@mui/material"
+import {Button, Typography} from "../utils"
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import Logo from "../assets/images/gym04.png"
+import HeroImage from "../assets/images/gym06.png"
 
 
 const HeroSection = () => {
     return (
         <>
-            <Stack direction="column" justifyContent="flex-start" alignItems="flex-start" className=" bg-[#4a2d26]" >
-                <Header />
-                <Box className="heroSec md:mb-12 mb-1" ></Box>
-                <Stack direction={{xs : "column-reverse", sm : "row", md:"row"}} justifyContent={{sm : "center" , md:"flex-start"}} alignItems={{ sm : "center", md:"flex-start"}} className=" bg-[transparent] xl:max-w-[80%] lg:max-w-[1366px] max-w-[1240px] mx-auto md:mb-0 mb-4" >
-                    <Box className=" flex md:flex-start flex-center p-3 md:pl-0 pl-8 md:min-w-[50%]" >
-                        <img alt="hero section imag" className="md:max-w-[80%] max-w-[100%] lg:max-h-[100%] md:max-h-[400px] max-h-[280px] object-cover " src={HeroSectionImage} />
-                    </Box>
-                    <Stack direction="column" justifyContent={{ xs : "center" , sm : "flex-start" , md:"flex-start"}} alignItems={{ xs : "center", sm : "flex-start", md:"flex-start"}} className="md:min-w-[50%] md:pt-12 pt-2 mx-1 pb-2 md:mt-0 mt-6" >
-                        <Typography children="Exceptional Quality" className="text-[#f0932b] md:text-lg text-sm " />
-                        <Typography children="Its time for a " className="text-[white] text-medium font-[Pacifico] tracking-widest	mt-3 xl:text-6xl lg:text-5xl md:text-4xl text-3xl " />
-                        <Stack direction="row" justifyContent="flex-start" alignItems="flex-start" className="mt-4" >
-                            <Typography children="good Coffee " className="text-[white] text-medium font-[Pacifico] tracking-widest mt-3 xl:text-6xl lg:text-5xl md:text-4xl text-3xl " />
-                            <img alt="hero section imag 1" className="md:max-w-[150px] max-w-[100px] md:max-h-[100px] max-h-[60px] object-cover " src={HeroSectionSmallImage} />
+            <Stack direction="column" justifyContent="flex-start" alignItems="flex-start" className="min-w-[100%] " >
+                <Stack direction={{xs: "column" , sm : "row"}} justifyContent={{xs: "column" , sm : "space-between"}} alignItems={{xs: "column" , sm : "flex-start" }} className="xl:max-w-[80%] lg:max-w-[1366px] max-w-[1240px] mx-auto bg-[transparent] xl:mt-12 lg:mt-6 mt-6" >
+                    <Stack direction="column" justifyContent={{xs: "center", sm:"flex-start"}} alignItems={{xs: "center", sm:"flex-start"}} className="min-w-[50%] p-2 md:pt-12 pt-0"  >
+                        <Typography children="Exercise is the key to a" className="text-xl xl:text-4xl lg:txt-3xl md:text-2xl text-[#2f3640] md:mt-12 mt-2" />
+                        <Box className="flex md:mt-2 mt-1" >
+                            <Typography children="Healthy" className="text-xl xl:text-4xl lg:txt-3xl md:text-2xl text-[#3742fa]  mr-2" />
+                            <Typography children="Lifestyle" className="text-xl xl:text-4xl lg:txt-3xl md:text-2xl text-[#2f3640] " />
+                        </Box>
+                        <Typography children="Maecenas interdum elit interdum, sagittis mi eget, fringilla tellus. Ut nec nulla id enim porta ornare ut eu libero." className="text-[11px] xl:text-md lg:text-[13px] md:text-[12px] text-[#747d8c] md:mt-6 mt-4 xl:max-w-[60%] lg:max-w-[70%] md:max-w-[60%] w-full md:px-2 px-6 xl:mb-12 mb-6" />
+                        <Box className="flex mt-2" >
+                            <Button children="Get Started" className="text-[white] bg-[#3742fa] md:px-6 px-4 md:h-[35px] h-[27px] capitalize font-semibold hover:bg-[transparent] hover:text-[#3742fa] heroBtn md:text-[13px] text-[11px]  mr-2" /> 
+                            <Button children="Watch Video" StartIcon={<PlayCircleIcon  />} className="text-[#57606f] bg-[transparent] px-4 md:h-[35px] h-[27px] capitalize font-semibold hover:bg-[transparent] hover:text-[#3742fa] heroBtn md:text-[13px] text-[11px] " />
+                        </Box>
+                    </Stack>
+                    <Stack direction="column" justifyContent="center" alignItems="flex-start" className="bg-[transparent] md:min-w-[50%] p-2 md:pt-12 pt-6 pb-8"  >
+                        <Stack direction="row" justifyContent="center" alignItems="flex-start" className="w-full"  >
+                            <img className="lg:max-w-[35px] max-w-[30px] lg:max-h-[35px] max-h-[30px] mb-1 bg-[#ff4757] p-1 rounded-md mr-1" src={Logo} alt="logo-imag"  />
+                            <Box className="flex flex-col justify-center items-center w-[250px]" >
+                                <Box className="rounded-full box01 z-10" >
+                                    <Box className="rounded-full box02 z-10" >
+                                        <Box className="rounded-full box03 z-10" >
+                                            <img className="md:max-w-[300px] max-w-[250px] md:h-[300px] h-[250px] bg-[transparent] z-20" src={HeroImage} alt="logo-imag"  />
+                                        </Box>
+                                    </Box>
+                                </Box>
+                            </Box>
+                            <Stack direction="column" justifyContent="center" alignItems="center" className="lg:p-4 p-2 rounded-md bg-[white] z-50 shadow-lg lg:ml-0 -ml-10" >
+                                <LocationOnIcon className="lg:w-[35px] w-[27px] lg:h-[35px] h-[27px] mb-1 text-[#3742fa] p-1 rounded-md mr-1"  />
+                                <Typography children="Find a new" className="text-md lg:text-[12px]  text-[8px] font-normal text-[#2f3640] rightSecText " />
+                                <Typography children="gym for you" className="text-md lg:text-[12px]  text-[8px] font-normal text-[#2f3640] rightSecText" />
+                            </Stack>
                         </Stack>
-                        <Typography children="Aliquam consequat nulla in sem feugiat efficitur. Aenean euismod tortor ut magna efficitur, tincidunt venenatis mi placerat. Suspendisse quam diam, feugiat sodales leo vitae, tempus ornare nisi. " className="mt-4 text-[white] tracking-wide xl:text-md md:text-xs text-[11px] lg:pr-4 pr-0 md:px-0 px-4 " />
-                        <Button children="Get Started" EndIcon={<ChevronRightIcon  />} className="text-[#2c3e50] bg-[#f0932b] rounded-full capitalize font-semibold px-4 lg:mt-10 mt-6 hover:bg-[transparent] hover:text-[white] heroBtn" />
-                    </Stack>
-                </Stack>
-                <Stack direction="row" justifyContent="space-around" alignItems="center" className="bg-[#6F4E37] rounded-t-[50px] md:hidden visible fixed bottom-0 left-0 min-w-[100%] h-[50px] z-20 px-2 pt-1" >
-                    <Stack direction="column" alignItems="center" justifyContent="center" className=" p-1" >
-                        <HomeIcon className="text-[white]" />
-                        <Typography children="Home" className="text-[#f0932b] text-[10px] font-semibold text-sm " />
-                    </Stack>
-                    <Stack direction="column" alignItems="center" justifyContent="center" className=" p-1" >
-                        <SchoolIcon className="text-[white]" />
-                        <Typography children="About" className="text-[#f0932b] text-[10px] font-semibold text-sm " />
-                    </Stack>
-                    <Stack direction="column" alignItems="center" justifyContent="center" className=" p-1" >
-                        <AddShoppingCartIcon className="text-[white]" />
-                        <Typography children="Shops" className="text-[#f0932b] text-[10px] font-semibold text-sm " />
-                    </Stack>
-                    <Stack direction="column" alignItems="center" justifyContent="center" className=" p-1" >
-                        <StorefrontIcon className="text-[white]" />
-                        <Typography children="Restaurants" className="text-[#f0932b] text-[10px] font-semibold text-sm " />
+                        <Stack direction="column" justifyContent="center" alignItems="center" className="lg:p-4 p-2 rounded-md bg-[white] z-50  md:-mt-[120px] -mt-[100px] lg:ml-6 md:ml-0" >
+                            <Typography children="Heart Rate" className="text-md lg:text-[12px] md:text-[9px] text-[12px] font-normal text-[#2f3640]" />
+                            <FavoriteIcon className="lg:w-[35px] md:w-[27px] lg:h-[35px] md:h-[27px] mb-1 text-[#3742fa] p-1 rounded-md mr-1"  />
+                            <Typography children="2567 BPM" className="text-md lg:text-[12px] md:text-[9px] text-[12px] font-normal  text-[#2f3640]" />
+                        </Stack>
                     </Stack>
                 </Stack>
             </Stack>

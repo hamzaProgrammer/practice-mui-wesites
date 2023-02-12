@@ -7,7 +7,7 @@ const ContentArea = ({children}) => {
 
   return (
     <>
-          <Box className={`min-h-[100vh] ${theme ? "bg-[#4a2d26]" : "bg-[white]"} `} >
+          <Box className={`min-h-[100vh] ${theme ? "bg-[white]" : "bg-[white]"} `} >
               {children}
           </Box>
     </>

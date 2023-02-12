@@ -27,19 +27,35 @@ export const iconTextStyle = {
 }
 
 export const iconStyle = {
-    maxWidth : "70px",
+    maxWidth : "40px",
     color : "white",
-    maxHeight : "70px"
+    marginRight : "10px",
+    maxHeight : "25px"
 }
 
 export const ButtonStyle = {
     color : "white",
     fontWeight : 600,
-    fontFamily : "Pacifico",
+    //fontFamily : "Pacifico",
     borderBottom: "1px solid #3B4E5D",
     borderRadius : "0px",
     marginBottom: "10px",
-    width : "100px",
+    width : "150px",
     height : "30px",
+    textTransform : "capitalize",
+}
+
+export const ButtonStyleNew = {
+    color : "#121717",
+    fontWeight : 600,
+    //fontFamily : "Pacifico",
+    borderBottom: "1px solid #3B4E5D",
+    marginBottom: "10px",
+    width : "150px",
+    height : "30px",
+    backgroundColor : "white",
+    borderRadius : "5px",
+    paddingLeft : "10px",
+    paddingRight : "10px",
     textTransform : "capitalize",
 }

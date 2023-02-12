@@ -1,18 +1,18 @@
 import React from 'react';
 import HeroSection from "../components/HeroSection"
-import TopCategories from "../components/CoffeTypes"
-import History from "../components/OurHistory"
-import StepsOfManufacturing from "../components/StepsOfMaking"
-import AboutCoffee from "../components/AboutCoffee"
+import Benefits from "../components/Benefits"
+import Changes from "../components/ReadyForChange"
+import Prices from "../components/Prices"
+import Testimonials from "../components/Testimonials"
 
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <TopCategories />
-      <History />
-      <StepsOfManufacturing />
-      <AboutCoffee />
+      <Benefits />
+      <Changes />
+      <Prices/>
+      <Testimonials/>
     </>
   );
 }

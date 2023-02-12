@@ -12,6 +12,7 @@ const HomeLayout = () => {
   return (
     <>
         <Box>
+            <Header />
             <ContentArea >
                 <Suspense fallback={<div />}>
                     <Switch>
